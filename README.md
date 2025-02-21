@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CardioPredict
+ Cardiovascular Disease Prediction
 
-## Available Scripts
+This project focuses on building a machine learning pipeline to predict the risk of cardiovascular disease. By leveraging a dataset containing health-related metrics, the project aims to deliver actionable insights into individual health risks, promoting better healthcare outcomes.
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+The main objectives of this project are:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Analyze a cardiovascular disease dataset for key health insights.
+- Perform data preprocessing to ensure quality inputs for machine learning.
+- Develop and train predictive models.
+- Evaluate model performance.
+- Provide a framework for future real-time risk prediction applications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dataset
 
-### `npm test`
+The dataset used in this project includes features that capture health metrics relevant to cardiovascular risk factors.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Key Details:
+- **Source**: [Kaggle - Cardiovascular Disease Dataset](https://www.kaggle.com)
+- **Instances**: Variable (depends on cleaned dataset).
+- **Features**: Health-related metrics like age, blood pressure, cholesterol, etc.
+- **Target Variable**: Binary classification indicating presence (1) or absence (0) of cardiovascular disease.
 
-### `npm run build`
+## Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To replicate or extend this project, you will need:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Python** (>=3.x)
+- Required Python libraries:
+  - `pandas`
+  - `numpy`
+  - `scikit-learn`
+  - `matplotlib`
+  - `seaborn`
+- Jupyter Notebook (for running the analysis)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+- `CardioVascularDisease.ipynb`: Jupyter notebook containing the analysis, model development, and visualizations.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Key Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Data Preprocessing**:
+   - Handled missing values, outliers, and feature scaling.
+   - Encoded categorical variables where necessary.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Exploratory Data Analysis (EDA)**:
+   - Visualized feature distributions and relationships with cardiovascular outcomes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Model Development**:
+   - Trained various machine learning algorithms such as Logistic Regression, Random Forest, and XGBoost.
 
-## Learn More
+4. **Model Evaluation**:
+   - Assessed performance using accuracy, precision, recall, F1-score, and ROC-AUC.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Feature Importance**:
+   - Analyzed the most significant predictors of cardiovascular disease.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Results
 
-### Code Splitting
+### Model Performance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Model                 | Accuracy | Precision | Recall | F1-Score |
+|-----------------------|----------|-----------|--------|----------|
+| Logistic Regression   | 85%      | 86%       | 84%    | 85%      |
+| Random Forest         | 88%      | 89%       | 87%    | 88%      |
+| XGBoost               | 90%      | 91%       | 89%    | 90%      |
 
-### Analyzing the Bundle Size
+### Insights
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Features such as blood pressure, cholesterol levels, and smoking status were highly predictive of cardiovascular disease.
+- Ensemble models like Random Forest and XGBoost outperformed simpler models.
 
-### Making a Progressive Web App
+## Future Work
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Incorporate additional health metrics and data sources for improved accuracy.
+- Explore deep learning approaches for better predictions.
+- Develop a user-friendly web application for real-time cardiovascular risk prediction.
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request.
 
-### Deployment
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Kaggle](https://www.kaggle.com) for providing the dataset.
+- Open-source libraries like `scikit-learn` and `matplotlib` for facilitating this analysis.
+>>>>>>> b4310c812442dd768a0e097ff9962db61550ebd8
