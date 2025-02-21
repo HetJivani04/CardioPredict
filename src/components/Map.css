@@ -1,0 +1,38 @@
+/* Map Container Styling */
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Loader Styling (if you want to show a loading state) */
+  .map-container::before {
+    content: "Loading Map...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    display: none;
+  }
+  
+  /* Adjusting map style on smaller screens */
+  @media (max-width: 768px) {
+    .map-container {
+      max-width: 90%;
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .map-container {
+      height: 300px;
+    }
+  }
+  
